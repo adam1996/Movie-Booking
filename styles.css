@@ -50,8 +50,9 @@ body {
     background-color: #6feaf6;
 }
 
-.seat.occuipied {
+.seat.occupied {
     background-color: white;
+    
 }
 
 .seat:nth-of-type(2) {
