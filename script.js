@@ -13,7 +13,13 @@ function updateSelectedCount() {
     count.innerText = selectedSeatsCount;
     total.innerText = selectedSeatsCount * ticketPrice;
 }
-// click on seats to toggle
+// Movie selection event:
+movieSelect.addEventListener('change', (event) => {
+    ticketPrice = +event.target.value; //updating value for ticketprice based on what movie is selected
+    updateSelectedCount();
+})
+
+// Seat click toggle
 container.addEventListener('click', (event) => {
     if(event.target.classList.contains('seat') && !event.target.classList.contains('occuiped')) {
         event.target.classList.toggle('selected');
@@ -21,3 +27,4 @@ container.addEventListener('click', (event) => {
         updateSelectedCount();
     }
 })
+
