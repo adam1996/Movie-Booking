@@ -110,10 +110,38 @@
         <div class="checkout-content">
             <span class="close">&times;</span>
             <!-- Content for the checkout window goes here -->
-            <p>Checkout window content goes here.</p>
-            <button id="confirmPurchaseButton">Confirm Purchase</button>
+            <!-- UP -->
+            <p class="text">You have selected <span id="count">0</span> sears for a price of £<span id="total">0</span></p>
+            <div class="checkout-container">
+                <form action="" class="form" id="form">
+                    <H2>Register for an account</H2>
+                    <div class="form-control">
+                        <label for="username">Full name</label>
+                        <input type="text" id="username" placeholder="Enter full name" >
+                        <small>Error Message</small>
+                        
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Email for confirmation">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password2">Confirm password</label>
+                        <input type="password" id="password2" placeholder="Enter password again">
+                        <small>Error Message</small>
+                    </div>
+                    <!-- <button type="submit">Continue to pay</button> -->
+               
+                </form>
+            <button type='submit' id="confirmPurchaseButton">Confirm Purchase</button>
           </div>
-    </div>x
+    </div>
 
 
     <script src="script.js"></script>
