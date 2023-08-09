@@ -117,7 +117,7 @@ p.text span {
 /* Buton hover effect: */
 
 .glow-on-hover {
-    width: 150px;
+    width: 100px;
     height: 50px;
     border: none;
     outline: none;
@@ -179,4 +179,5 @@ p.text span {
 
 #clearSelectionButton{
     color: rgb(221, 78, 78);
+    margin-right: 20px;
 }
