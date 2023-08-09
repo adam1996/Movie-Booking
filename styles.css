@@ -113,6 +113,7 @@ body {
 }
 p.text {
     margin: 5px 0;
+    width: auto;
 }
 
 p.text span {
@@ -189,14 +190,21 @@ p.text span {
 
 
 /* Styles for the modal */
+
+h2 {
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
 .checkout {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px); /* Apply a blur effect to the background */
     display: flex;
     align-items: center;
@@ -204,13 +212,13 @@ p.text span {
   }
   
   .checkout-content {
-    background-color: #1d1d29;
-    margin: 10% auto;
-    padding: 20px;
+    background-color: #242333;
+    margin: auto;
+    padding: 0px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    max-width: 100%; /* Set a maximum width for the content */
+    width: 60%;
+    max-width: 400px; 
     color: white;
   }
   
@@ -220,13 +228,15 @@ p.text span {
     font-weight: bold;
     cursor: pointer;
     color: white; /* Change the close button color */
+    z-index: -1;
   }
 /* Checkout Container Form:  */
 .checkout-container {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
-    width: 400px;
+    width: auto;
+    padding: 0px;
 }
 
 .form {
@@ -277,6 +287,12 @@ form-control input:focus {
 
 .form-control.error small {
     visibility: visible;
+}
+
+#confirmPurchaseButton {
+    display: block;
+    width: 100%;
+    max-width: 400px;
 }
 
 /* .form button {
