@@ -193,8 +193,7 @@ p.text span {
 
 h2 {
     color: black;
-    justify-content: center;
-    align-items: center;
+    
 }
 .checkout {
     display: none;
@@ -295,6 +294,9 @@ form-control input:focus {
     max-width: 400px;
 }
 
+.blackText {
+    color: black;
+}
 /* .form button {
     cursor: pointer;
     background-color: #3498db;
