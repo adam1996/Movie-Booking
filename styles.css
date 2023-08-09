@@ -226,7 +226,7 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    color: white; /* Change the close button color */
+    color: white; 
     z-index: -1;
   }
 /* Checkout Container Form:  */

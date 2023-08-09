@@ -67,22 +67,21 @@ container.addEventListener('click', (event) => {
 })
 document.addEventListener('DOMContentLoaded', function() {
     const purchaseButton = document.getElementById('purchaseSelectionButton');
-    const modal = document.getElementById('checkout'); // Changed 'modal' to 'checkout'
+    const modal = document.getElementById('checkout'); 
     const closeCheckout = document.querySelector('.close');
     const confirmPurchaseButton = document.getElementById('confirmPurchaseButton');
 
     purchaseButton.addEventListener('click', function() {
-    modal.style.display = 'block'; // Changed 'checkout' to 'modal'
+    modal.style.display = 'block'; 
     });
 
     closeCheckout.addEventListener('click', function() {
-    modal.style.display = 'none'; // Changed 'checkout' to 'modal'
+    modal.style.display = 'none'; 
     });
 
     confirmPurchaseButton.addEventListener('click', function() {
     // Perform purchase logic here
-    // After purchase, you might want to close the modal
-    modal.style.display = 'none'; // Changed 'checkout' to 'modal'
+    modal.style.display = 'none'; 
 });
 
   });
