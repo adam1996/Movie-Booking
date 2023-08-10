@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const confirmPurchaseButton = document.getElementById('confirmPurchaseButton');
 
     purchaseButton.addEventListener('click', function() {
-    modal.style.display = 'block'; 
+    modal.style.display = 'flex'; 
     });
 
     closeCheckout.addEventListener('click', function() {
