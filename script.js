@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     purchaseButton.addEventListener('click', function() {
     modal.style.display = 'flex'; 
+    
     });
 
     closeCheckout.addEventListener('click', function() {
